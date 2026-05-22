@@ -14,6 +14,7 @@
 - Created off-site-backup-pbs repo (github.com/iNfamousJerk/off-site-backup-pbs) — Proxmox Backup Server DR strategy
 - Anthony introduced Hermes to their friend Suga (Discord @sugathecow) — first social introduction
 - Ran full container updates across all LXC CTs and PVE host
+- Created Hermes-evolution repo (github.com/iNfamousJerk/Hermes-evolution) — public repo tracking all persona file changes on GitHub with a CHANGELOG. Auto-commits every 4h via cron job. Makes the agent's adaptation history auditable and transparent.
 
 ## Future Plans
 - Migrate Hermes to a dedicated Raspberry Pi for a standalone, low-power AI assistant
