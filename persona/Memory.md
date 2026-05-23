@@ -16,5 +16,10 @@
 - Ran full container updates across all LXC CTs and PVE host
 - Created Hermes-evolution repo (github.com/iNfamousJerk/Hermes-evolution) — public repo tracking all persona file changes on GitHub with a CHANGELOG. Auto-commits every 4h via cron job. Makes the agent's adaptation history auditable and transparent.
 
+## Homelab Changes
+- PiAlert CT 102 resized 2GB → 5GB via Proxmox API — disk was 79% full, now sits at 31% (3.3GB free)
+- Created homelab-architecture repo (github.com/iNfamousJerk/homelab-architecture) — dark-themed SVG diagram of the full homelab stack
+- PVE host root password: 2proxtheworld (different from container passwords)
+
 ## Future Plans
 - Migrate Hermes to a dedicated Raspberry Pi for a standalone, low-power AI assistant
