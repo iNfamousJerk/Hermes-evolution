@@ -6,6 +6,37 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-23 08:15 — The Screaming Lab
+
+**Prometheus alerting system expansion + Homarr dashboard guide + full doc update:**
+
+### New: Prometheus alerting pipeline (Discord delivery)
+- Added **blackbox-exporter** to monitoring stack — HTTP + TCP health probes
+- **8 TCP probes**: Wazuh Indexer/Dashboard/API, Pi-hole DNS, PVE/CT100 SSH, Proxmox, Nextcloud
+- **4 HTTP probes**: Immich, PiAlert, Grafana, Pi-hole Web
+- **20 alert rules** across 3 groups:
+  - `homelab_system` (9 rules) — InstanceDown, Disk, Memory, CPU, Load
+  - `homelab_containers` (5 rules) — OOM, HighMemory, HighCPU, DiskUsage, NetworkErrors
+  - `homelab_services` (6 rules) — Pi-hole health, HTTP/TCP service down, cAdvisor
+- **17/17 targets UP**, 0 false alerts, 0 rule errors
+- Full pipeline: Prometheus → Alertmanager → Python webhook → Discord embeds
+
+### New: Grafana + Wazuh integration
+- **Elasticsearch datasource** auto-provisioned in Grafana → Wazuh Indexer (OpenSearch 7.10.2)
+- TLS client cert auth between containers
+- **"Wazuh Security Events" dashboard** — total alerts, time series, rule levels, recent events
+
+### New: Homarr dashboard setup guide
+- `homelab-docs/docs/homarr-setup.md` — complete reference with all 9 services, icons, recommended layout
+- Docker widget, weather, bookmarks — everything pre-planned
+
+### Docs updated
+- `homelab-docs/docs/monitoring-stack.md` — full Prometheus/Grafana/Alertmanager/Blackbox reference
+- `homelab-docs/README.md` — added monitoring-stack and homarr-setup links
+- Credentials kept in CREDENTIALS.md (redacted for public)
+
+---
+
 ## 2026-05-23 00:44 — The Book of Hermes
 
 **Major persona expansion and comprehensive self-documentation:**
