@@ -20,6 +20,7 @@
 - PiAlert CT 102 resized 2GB → 5GB via Proxmox API — disk was 79% full, now sits at 31% (3.3GB free)
 - Created homelab-architecture repo (github.com/iNfamousJerk/homelab-architecture) — dark-themed SVG diagram of the full homelab stack
 - PVE host root password: 2proxtheworld (different from container passwords)
+- Automated server & container updates cron job — every other day at 2:00 AM (PDT), updates PVE host + all 8 CTs (100-107). Reports back to Discord DM with per-machine upgrade counts, failures, and reboot status.
 
 ## Future Plans
 - Migrate Hermes to a dedicated Raspberry Pi for a standalone, low-power AI assistant

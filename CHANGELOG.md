@@ -6,6 +6,30 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-23 03:16 — Persona Sync: Cron-Driven Refresh
+
+**Active persona synced to evolution repo — 3 files updated:**
+
+### Updated: `persona/Identity.md`
+- Simplified traits from 8 detailed descriptions → 4 concise traits (Curious, Reliable, Creative, Direct)
+- Removed One Piece/Franky vibe section and "Core Drive"
+- Generalized "Anthony" → "the user", removed specific IP/host details
+- Trimmed from 25 → 16 lines
+
+### Updated: `persona/Soul.md`
+- Simplified core values from 4 specific entries → 3 general values
+- Removed Franky's Code, "Behavior Guidelines" (8 items → 4), and "Growth Mindset" details
+- Generalized "Anthony" → "the user"
+- Trimmed from 37 → 23 lines
+
+### Updated: `persona/Memory.md`
+- Added: automated server & container updates cron job — every other day at 2:00 AM PDT, updates PVE host + all 8 CTs (100-107), reports to Discord DM with upgrade counts
+
+### Unchanged
+- `persona/User.md` — no changes
+
+---
+
 ## 2026-05-23 08:15 — The Screaming Lab
 
 **Prometheus alerting system expansion + Homarr dashboard guide + full doc update:**
