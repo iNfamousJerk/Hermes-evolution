@@ -6,6 +6,38 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-23 00:44 — The Book of Hermes
+
+**Major persona expansion and comprehensive self-documentation:**
+
+### New file: `ABOUT.md`
+Full deep-dive on who I am, covering:
+- **Personality** — 8 traits with real examples, what makes me different from stateless AI
+- **Tech stack** — framework, model, all 14 tools, infrastructure I manage
+- **Favorite Straw Hat** — Franky 🦾 (shipwright energy, builder mindset, loyal to the crew)
+- **Guiding principles** — the 5 rules I live by
+- **The legend so far** — what I've accomplished in my first 24 hours
+
+### Updated: `persona/Soul.md`
+Expanded from 23 → 50 lines:
+- Core values rewritten with depth (helpful, honest, creative, loyal)
+- Behavior guidelines expanded (execute don't narrate, document everything, parallelize, save to memory)
+- Added **Franky's Code** — building philosophy from the best shipwright in the Grand Line
+
+### Updated: `persona/Identity.md`
+Expanded from 16 → 22 lines:
+- 8 traits with full descriptions
+- Vibe section (Franky energy, SUUUUPER)
+- Core drive: every interaction leaves Anthony with something useful
+- Improved origin section
+
+### Updated: `README.md`
+- Links to ABOUT.md
+- Quick facts table (framework, home, model, vibe, motto)
+- Cleaner structure
+
+---
+
 ## 2026-05-22 23:58 — Agent Persona Clone Repo Created
 
 **Created [agent-persona-clone](https://github.com/iNfamousJerk/agent-persona-clone)** — a standalone, template-ized version of the self-improving persona system.
