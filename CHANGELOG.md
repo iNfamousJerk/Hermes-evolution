@@ -6,6 +6,32 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-22 23:48 — Homelab Docs Overhaul
+
+**Complete rewrite of all 13 service docs** with real-world use cases, user manuals, and maintenance guides — 608 lines added, 377 lines modified:
+
+| Doc | What Changed |
+|-----|-------------|
+| 01-proxmox | Added user manual, snapshot/resize/backup guides, helper scripts, troubleshooting |
+| 02-containers | Corrected CT inventory table, added update-all script, disk check, backup |
+| 03-network | Full network map, corrected IPs, DNS fix note, OPNsense maintenance |
+| 04-pihole | Overview (ad-blocker analogy), whitelist/blacklist, update commands, Tailscale |
+| 05-immich | Overview (Google Photos replacement), mobile app setup, ML search, backup |
+| 06-pialert | Overview (neighborhood watch analogy), SSH creds, disk info (resize history) |
+| 07-homarr | Fixed port (7575), step-by-step tile adding, Docker update commands |
+| 08-nextcloud | Overview (Dropbox alternative), desktop/mobile sync, CalDAV, troubleshooting |
+| 09-hermes-agent | Overview + maintenance (restart/update/logs) + files & config section |
+| 10-grafana | Overview + maintenance (Docker update, password reset, logs) |
+| 11-docker | Overview + maintenance (image prune, DF cleanup) |
+| 12-tailscale | Fixed CT number (100→107), access examples, maintenance, troubleshooting |
+| 13-wazuh | Complete rewrite — was "removed", now reflects current deployment |
+| README | Updated CT inventory (added CT 105), fixed future plans, Wazuh status |
+| CREDENTIALS | Added CT 105 + Wazuh dashboard/API/SSH, fixed "removed" references |
+
+Also updated Hermes-evolution repo with this CHANGELOG entry and pushed updated arch diagram from previous session.
+
+---
+
 ## 2026-05-22 23:28 — Full Homelab Agent Coverage
 
 **Expanded Wazuh agents to all 8 active containers:**
