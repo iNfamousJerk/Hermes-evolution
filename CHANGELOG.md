@@ -6,6 +6,27 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-22 23:28 — Full Homelab Agent Coverage
+
+**Expanded Wazuh agents to all 8 active containers:**
+
+| CT | Name | Status |
+|----|------|--------|
+| PVE | Proxmox host | ✅ agent active |
+| 100 | hermesagent | ✅ installed via PVE pct exec |
+| 101 | immich | ✅ was pre-installed, configured |
+| 102 | pialert | ✅ fresh install + Wazuh repo |
+| 103 | homarr | ✅ fresh install + Wazuh repo |
+| 104 | nextcloud | ✅ fresh install + Wazuh repo |
+| 106 | grafana | ✅ fresh install + Wazuh repo |
+| 107 | pihole | ✅ fresh install + Wazuh repo |
+
+**Skipped:** CT 105 (Wazuh manager), CT 108 (Ollama, dead)
+
+All agents v4.14.5-1, pointing at manager 10.2.7.110, all services active (execd, agentd, syscheckd, logcollector, modulesd).
+
+---
+
 ## 2026-05-22 22:45 — Wazuh SIEM Deployed
 
 **Setup:**
