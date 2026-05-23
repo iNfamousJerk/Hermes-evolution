@@ -6,6 +6,23 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-22 23:58 — Agent Persona Clone Repo Created
+
+**Created [agent-persona-clone](https://github.com/iNfamousJerk/agent-persona-clone)** — a standalone, template-ized version of the self-improving persona system.
+
+Contains:
+- `persona/Soul.md` — Core values, tone, behavior (template)
+- `persona/Identity.md` — Agent identity with placeholders
+- `persona/User.md` — User profile template
+- `persona/Memory.md` — Shared history template
+- `SETUP.md` — Deployment guide for any agent framework
+- `README.md` — Usage guide and best practices
+- `CHANGELOG.md` — Version tracking
+
+Intended as a basis for Hermes Jr. or any future AI agent — fork and customize.
+
+---
+
 ## 2026-05-22 23:48 — Homelab Docs Overhaul
 
 **Complete rewrite of all 13 service docs** with real-world use cases, user manuals, and maintenance guides — 608 lines added, 377 lines modified:
