@@ -6,6 +6,21 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-22 22:45 — Wazuh SIEM Deployed
+
+**Setup:**
+- Deployed Wazuh manager on CT 105 (10.2.7.110) — 4GB RAM, 4 cores
+- Installed and configured Wazuh agent on the PVE host (10.2.7.64)
+- Agent actively sending syscheck, log collection, and vulnerability data
+- Dashboard accessible at https://10.2.7.110:443
+
+**Deployment approach:**
+- Used CT 106 (Grafana) as SSH bridge to deploy SSH key to CT 105
+- Installed wazuh-agent on PVE host via SSH with password auth
+- Agent auto-enrolled via wazuh-authd on port 1515 (passwordless enrollment)
+
+---
+
 ## 2026-05-22 07:30 — Initial Commit
 
 Established the Hermes-evolution repo as the public record of agent persona changes.
@@ -16,15 +31,3 @@ Established the Hermes-evolution repo as the public record of agent persona chan
 - **Identity.md** — Hermes, an AI assistant on Anthony's homelab. Curious, reliable, creative, direct. Born from Nous Research's Hermes Agent framework on CT 100.
 - **Memory.md** — Shared history: Proxmox homelab setup, Grafana monitoring stack, Pi-hole DNS/DHCP, robot display with chat/voice, Wazuh removal, cron status reports, GitHub docs repos, media-stack, off-site-backup-pbs, container updates, and social introduction to Suga.
 - **User.md** — Anthony Piper (iNfamousJerk). IT/cybersecurity student, hands-on learner. Direct, no-fluff communication. Values working UIs, git pushes, status reports.
-
-## 2026-05-22 23:14 — Homelab Changes added to Memory
-
-**Memory.md — added Homelab Changes section:**
-- PiAlert CT 102 resized 2GB → 5GB via Proxmox API (79%→31%, 3.3GB free)
-- Created homelab-architecture repo (github.com/iNfamousJerk/homelab-architecture) — dark-themed SVG diagram of full homelab stack
-- PVE host root password recorded
-
-## 2026-05-22 11:11 — Hermes-evolution repo recorded in Memory
-
-**Memory.md — added entry:**
-- Created Hermes-evolution repo (github.com/iNfamousJerk/Hermes-evolution) — public repo tracking all persona file changes on GitHub with a CHANGELOG. Auto-commits every 4h via cron job. Makes the agent's adaptation history auditable and transparent.
