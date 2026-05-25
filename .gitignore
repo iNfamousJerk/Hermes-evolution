@@ -1,0 +1,33 @@
+# ──────────────────────────────────────────────
+# SECURITY: Never commit secrets to this repo
+# ──────────────────────────────────────────────
+
+# Environment & Secrets
+.env
+.env.*
+*.env
+
+# API keys, tokens, credentials
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.cert
+
+# SSH config
+.ssh/
+authorized_keys
+
+# IDE droppings
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Build artifacts
+__pycache__/
+*.pyc
+*.log
+*.bak
