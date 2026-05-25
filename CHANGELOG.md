@@ -30,6 +30,25 @@ Format: `YYYY-MM-DD HH:MM` (PST)
 
 ---
 
+## 2026-05-24 19:25 — Memory Refresh: Infrastructure and Future Plans
+
+**Active persona synced to evolution repo — `persona/Memory.md` updated:**
+
+### Updated: `persona/Memory.md`
+- Refined Wazuh SIEM removal note — clarified it was the *original* CT 108 that was destroyed
+- Added: all container passwords standardized to lowercase
+- Added: **Wazuh re-deployed on CT 108** — manager at 10.2.7.110 with 8 active agents (PVE host + CTs 100-107). Dashboard HTTPS on port 443, API on 55000, enrollment port 1515. Integrated with Suricata IDS on OPNsense via syslog forwarding (UDP 514).
+- Added: **UPS monitoring stack deployed** — NUT (CyberPower CP1500 AVR) on PVE host with USB driver, Prometheus NUT exporter on CT 106, Grafana provisioned dashboard, Alertmanager with Discord webhook alerts. Graceful shutdown script at `/usr/local/bin/pve-ups-shutdown`.
+- Added: **Container startup order configured** — Pi-hole (CT 107) first, Grafana stack (CT 106) second (30s delay), others (CT 100-105) third (60s delay). All `onboot: 1`.
+- Added future plans: Build PBS second node on Dell Optiplex 7050 MT ("Pirate PBS"), R stack / PVE2 migration on new hardware
+
+### Unchanged
+- `persona/Identity.md` — no changes
+- `persona/Soul.md` — no changes
+- `persona/User.md` — no changes
+
+---
+
 ## 2026-05-23 08:15 — The Screaming Lab
 
 **Prometheus alerting system expansion + Homarr dashboard guide + full doc update:**
