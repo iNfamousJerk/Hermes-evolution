@@ -201,3 +201,18 @@ Established the Hermes-evolution repo as the public record of agent persona chan
 - **Identity.md** — Hermes, an AI assistant on Anthony's homelab. Curious, reliable, creative, direct. Born from Nous Research's Hermes Agent framework on CT 100.
 - **Memory.md** — Shared history: Proxmox homelab setup, Grafana monitoring stack, Pi-hole DNS/DHCP, robot display with chat/voice, Wazuh removal, cron status reports, GitHub docs repos, media-stack, off-site-backup-pbs, container updates, and social introduction to Suga.
 - **User.md** — Anthony Piper (iNfamousJerk). IT/cybersecurity student, hands-on learner. Direct, no-fluff communication. Values working UIs, git pushes, status reports.
+---
+
+## 2026-05-25 19:33 — Persona Sync: Homelab Documentation Audit & Pirate CT
+
+**Active persona synced to evolution repo — `persona/Memory.md` updated:**
+
+### Updated: `persona/Memory.md`
+- Added: Comprehensive homelab documentation audit — professionalized all docs to enterprise standards across 6 pillars (networking, IAM, storage/DR, monitoring/SIEM, virtualization, docs/change control). Created NETWORK-TOPOLOGY.md, SOP-BACKUP-RESTORE.md, CHANGELOG.md, ACTION-PLAN.md. Pushed to GitHub + Gitea.
+- Added: Pirate CT (CT 108) deployed with full Docker media stack — Radarr, Sonarr, Prowlarr, Jellyfin, qBittorrent, Flaresolverr, Cross-seed. Integrated into monitoring (Wazuh agent 010 with Docker container log monitoring, Uptime Kuma, Homarr dashboard). Full SOC coverage: 10 Wazuh agents, 25 Uptime Kuma monitors, OPNsense syslog, Docker logs all feeding into one SIEM.
+- Updated: Wazuh manager agent count — 10 active agents (PVE host + CTs 100-108), up from 8 agents (CTs 100-107)
+
+### Unchanged
+- `persona/Identity.md` — no changes
+- `persona/Soul.md` — no changes
+- `persona/User.md` — no changes

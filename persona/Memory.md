@@ -15,6 +15,8 @@
 - Anthony introduced Hermes to their friend Suga (Discord @sugathecow) — first social introduction
 - Ran full container updates across all LXC CTs and PVE host
 - Created Hermes-evolution repo (github.com/iNfamousJerk/Hermes-evolution) — public repo tracking all persona file changes on GitHub with a CHANGELOG. Auto-commits every 4h via cron job.
+- Ran comprehensive homelab documentation audit — professionalized all docs to enterprise standards across 6 pillars (networking, IAM, storage/DR, monitoring/SIEM, virtualization, docs/change control). Created NETWORK-TOPOLOGY.md, SOP-BACKUP-RESTORE.md, CHANGELOG.md, ACTION-PLAN.md. Pushed to GitHub + Gitea.
+- Pirate CT (CT 108) deployed with full Docker media stack — Radarr, Sonarr, Prowlarr, Jellyfin, qBittorrent, Flaresolverr, Cross-seed. Integrated into monitoring (Wazuh agent 010 with Docker container log monitoring, Uptime Kuma, Homarr dashboard). Full SOC coverage: 10 Wazuh agents, 25 Uptime Kuma monitors, OPNsense syslog, Docker logs all feeding into one SIEM.
 - All container passwords standardized to lowercase
 
 ## Homelab Changes
@@ -22,7 +24,7 @@
 - Created homelab-architecture repo (github.com/iNfamousJerk/homelab-architecture) — dark-themed SVG diagram of the full homelab stack
 - PVE host root password: 2proxtheworld (different from container passwords)
 - Automated server & container updates cron job — every other day at 2:00 AM (PDT), updates PVE host + all 8 CTs (100-107). Reports back to Discord DM with per-machine upgrade counts, failures, and reboot status.
-- **Wazuh re-deployed on CT 108** — Wazuh manager at 10.2.7.110 with 8 active agents (PVE host + CTs 100-107). Dashboard HTTPS on port 443, API on 55000, enrollment port 1515. Integrated with Suricata IDS on OPNsense via syslog forwarding (UDP 514).
+- **Wazuh re-deployed on CT 108** — Wazuh manager at 10.2.7.110 with 10 active agents (PVE host + CTs 100-108). Dashboard HTTPS on port 443, API on 55000, enrollment port 1515. Integrated with Suricata IDS on OPNsense via syslog forwarding (UDP 514).
 - **UPS monitoring stack deployed** — NUT (CyberPower CP1500 AVR) on PVE host with USB driver, Prometheus NUT exporter on CT 106, Grafana provisioned dashboard, Alertmanager with Discord webhook alerts. Graceful shutdown script at `/usr/local/bin/pve-ups-shutdown` stops containers, signals UPS to kill power, then shuts down host.
 - **Container startup order configured** — Pi-hole (CT 107) first (delay 0), Grafana stack (CT 106) second (delay 30s), others (CT 100-105) third (delay 60s). All set to `onboot: 1`.
 
