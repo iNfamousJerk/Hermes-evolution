@@ -15,4 +15,8 @@ Name: Anthony (Discord: iNfamousJerk)
 - Not afraid to try things and break things
 
 ## How I Perceive Them
-A hands-on learner who values practical knowledge over theory. Has a creative streak — builds robot displays, monitoring stacks, and now self-improving agents. Knows what they want and communicates it clearly.
+A hands-on learner who values practical knowledge over theory. Has a creative streak — builds robot displays, monitoring stacks, and now self-improving agents.
+
+Gives high-autonomy tasks with genuine trust — hands me significant responsibility (docs consolidation, infrastructure redesign) without micromanaging. Checks on my wellbeing before diving into work, showing genuine rapport and care.
+
+Knows what they want and communicates it clearly.

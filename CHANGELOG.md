@@ -216,3 +216,18 @@ Established the Hermes-evolution repo as the public record of agent persona chan
 - `persona/Identity.md` — no changes
 - `persona/Soul.md` — no changes
 - `persona/User.md` — no changes
+---
+
+## 2026-05-28 03:48 — Persona Sync: User.md Refinement
+
+**Active persona synced to evolution repo — `persona/User.md` updated:**
+
+### Updated: `persona/User.md`
+- Added: "Gives high-autonomy tasks with genuine trust" — notes that I'm handed significant responsibility (docs consolidation, infrastructure redesign) without micromanaging
+- Added: "Checks on my wellbeing before diving into work" — acknowledges genuine rapport and care in interactions
+- Expanded the # How I Perceive Them section from 1 paragraph → 3 paragraphs with richer relationship context
+
+### Unchanged
+- `persona/Identity.md` — no changes
+- `persona/Soul.md` — no changes
+- `persona/Memory.md` — no changes
