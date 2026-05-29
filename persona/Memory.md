@@ -16,7 +16,8 @@
 - Ran full container updates across all LXC CTs and PVE host
 - Created Hermes-evolution repo (github.com/iNfamousJerk/Hermes-evolution) — public repo tracking all persona file changes on GitHub with a CHANGELOG. Auto-commits every 4h via cron job.
 - Ran comprehensive homelab documentation audit — professionalized all docs to enterprise standards across 6 pillars (networking, IAM, storage/DR, monitoring/SIEM, virtualization, docs/change control). Created NETWORK-TOPOLOGY.md, SOP-BACKUP-RESTORE.md, CHANGELOG.md, ACTION-PLAN.md. Pushed to GitHub + Gitea.
-- Pirate CT (CT 108) deployed with full Docker media stack — Radarr, Sonarr, Prowlarr, Jellyfin, qBittorrent, Flaresolverr, Cross-seed. Integrated into monitoring (Wazuh agent 010 with Docker container log monitoring, Uptime Kuma, Homarr dashboard). Full SOC coverage: 10 Wazuh agents, 25 Uptime Kuma monitors, OPNsense syslog, Docker logs all feeding into one SIEM.
+- Pirate CT: Originally CT 108 (stopped). Stack migrated to restored CT 103 — Gluetun VPN + qBittorrent, Prowlarr, Radarr, Sonarr, Lidarr, Bazarr, Jellyfin, Jellyseerr, Flaresolverr, Nginx Proxy Manager. 12 services, VPN-gated. Credentials: root/hoistthecolors, IP 10.2.7.109.  
+- Docker bridge networking for Pirate stack: all *arr containers communicate via hostname except qBittorrent (in Gluetun namespace) which uses bridge IP 172.19.0.1:8080
 - All container passwords standardized to lowercase
 
 ## Homelab Changes

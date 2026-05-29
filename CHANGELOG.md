@@ -218,6 +218,23 @@ Established the Hermes-evolution repo as the public record of agent persona chan
 - `persona/User.md` — no changes
 ---
 
+## 2026-05-29 08:01 — Persona Sync: Memory.md Pirate Stack Update
+
+**Active persona synced to evolution repo — `persona/Memory.md` updated:**
+
+### Updated: `persona/Memory.md`
+- Replaced old Pirate CT entry (CT 108, initial Docker media stack deployment) with current state: CT 108 stopped, stack migrated to restored CT 103
+- Added Gluetun VPN integration — qBittorrent runs in Gluetun namespace, all *arr containers communicate via hostname
+- Added Lidarr, Bazarr, Jellyseerr, Nginx Proxy Manager to service list (expanded from 6 to 12 services)
+- Added Docker bridge networking detail: qBittorrent accessible at 172.19.0.1:8080
+
+### Unchanged
+- `persona/Identity.md` — no changes
+- `persona/Soul.md` — no changes
+- `persona/User.md` — no changes
+
+---
+
 ## 2026-05-28 03:48 — Persona Sync: User.md Refinement
 
 **Active persona synced to evolution repo — `persona/User.md` updated:**
