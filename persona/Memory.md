@@ -19,6 +19,7 @@
 - Pirate CT: Originally CT 108 (stopped). Stack migrated to restored CT 103 — Gluetun VPN + qBittorrent, Prowlarr, Radarr, Sonarr, Lidarr, Bazarr, Jellyfin, Jellyseerr, Flaresolverr, Nginx Proxy Manager. 12 services, VPN-gated. Credentials: root/hoistthecolors, IP 10.2.7.109.  
 - Docker bridge networking for Pirate stack: all *arr containers communicate via hostname except qBittorrent (in Gluetun namespace) which uses bridge IP 172.19.0.1:8080
 - All container passwords standardized to lowercase
+- **Full media stack fix (May 29)** — Debugged and fixed FlareSolverr proxy in Prowlarr (missing proxy + tag linkage), added 1337x indexer with Cloudflare bypass, connected Bazarr to Sonarr via SignalR, mounted torrent directories into Jellyfin so manually-downloaded content appears. Result: anime (Golden Time, 3D Kanojo S1+S2, Toradora!) successfully downloading via Sonarr→qBittorrent→Jellyfin. Media stack fully operational with end-to-end automation.
 
 ## Homelab Changes
 - PiAlert CT 102 resized 2GB → 5GB via Proxmox API — disk was 79% full, now sits at 31% (3.3GB free)
